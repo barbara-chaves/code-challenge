@@ -1,0 +1,37 @@
+.legend-graph_line,
+.legend-graph_label {
+  width: 100%;
+  height: 100%;
+  height: 7px;
+  display: flex;
+}
+.legend-graph_line_item,
+.legend-graph_label_item {
+  height: 100%;
+  width: 100%;
+}
+
+.legend-graph_label_item span {
+  font-size: 12px;
+}
+
+.legend-graph_line.--basic {
+  flex-direction: column;
+  height: auto;
+  padding: 0px 20px;
+}
+
+.legend-graph_line_item_circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.legend-graph_line_item.--basic {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
