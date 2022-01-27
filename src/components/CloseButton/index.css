@@ -1,0 +1,17 @@
+.close-button {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--icon-color);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+svg {
+  width: 12px;
+  height: 12px;
+  color: var(--icon-color);
+}

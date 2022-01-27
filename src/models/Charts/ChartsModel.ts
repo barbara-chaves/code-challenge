@@ -5,7 +5,7 @@ export interface ChartDataItems {
   name?: string;
 }
 
-export interface ChartDataTymeline {
+export interface ChartDataTimeline {
   step: number;
   speed: number;
   dateFormat: string;
@@ -18,6 +18,6 @@ export default interface ChartData {
   name: string;
   type: ChartType;
   items?: ChartDataItems[];
-  timeline?: ChartDataTymeline;
+  timeline?: ChartDataTimeline;
   description: string;
 }
