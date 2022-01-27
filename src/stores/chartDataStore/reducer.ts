@@ -11,7 +11,6 @@ interface ChartAction {
 }
 
 export const reducer = (state: ChartStateI, action: ChartAction) => {
-  console.log(state);
   const { type, payload } = action;
   switch (type) {
     case ChartActionTypes.GET_DATA:

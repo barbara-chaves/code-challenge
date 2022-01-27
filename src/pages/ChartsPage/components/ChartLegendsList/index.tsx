@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import chartService from '../../services/chart/chartService';
-import { ChartDataContext } from '../../stores/chartDataStore/context';
-import { ChartActionTypes } from '../../stores/chartDataStore/reducer';
 
-import { LegendProvider } from '../../stores/legendStore/context';
+import chartService from '../../../../services/chart/chartService';
+import { ChartDataContext } from '../../../../stores/chartDataStore/context';
+import { ChartActionTypes } from '../../../../stores/chartDataStore/reducer';
+
+import { LegendProvider } from '../../../../stores/legendStore/context';
 
 import ChartLegend from '../ChartLegend';
 

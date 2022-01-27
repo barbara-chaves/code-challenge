@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Chart from '../../components/Chart';
 import { ChartContextProvider } from '../../stores/chartDataStore/context';
+import Chart from './components/ChartLegendsList';
 
 const ChartPage = () => {
   return (

@@ -3,10 +3,9 @@ import "./index.css"
 import parse from 'html-react-parser';
 import Modal from 'react-modal'
 
-
-import CloseButton from '../../../CloseButton';
-import { LegendActionsTypes } from '../../../../stores/legendStore/reducer';
-import { LegendContext } from '../../../../stores/legendStore/context';
+import CloseButton from '../../../../../../components/CloseButton';
+import { LegendActionsTypes } from '../../../../../../stores/legendStore/reducer';
+import { LegendContext } from '../../../../../../stores/legendStore/context';
 
 Modal.setAppElement("#root")
 

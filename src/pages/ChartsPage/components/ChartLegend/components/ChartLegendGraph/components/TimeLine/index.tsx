@@ -3,7 +3,7 @@ import dayjs from "dayjs"
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import "./index.css"
-import { ChartDataTimeline } from '../../../../../../models/Charts/ChartsModel';
+import { ChartDataTimeline } from '../../../../../../../../models/Charts/ChartsModel';
 
 
 const handleStyle = { backgroundColor: "#CAB2D6", border: "none", width: 12, height: 12 }

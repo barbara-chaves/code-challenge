@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import "./index.css";
 
 
-import { LegendActionsTypes } from "../../../../stores/legendStore/reducer";
-import { LegendContext } from "../../../../stores/legendStore/context";
-import InteractionalIcon from "../../../InteractionalIcon";
+import { LegendActionsTypes } from "../../../../../../stores/legendStore/reducer";
+import { LegendContext } from "../../../../../../stores/legendStore/context";
+import InteractionalIcon from "../../../../../../components/InteractionalIcon";
 
 const ChartLegendHeader = () => {
   const { state, dispatch } = useContext(LegendContext)

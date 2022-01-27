@@ -28,7 +28,6 @@ export const  reducer = (state: LegendState, action: LegendActions) => {
         dragProps: payload,
       };
     case LegendActionsTypes.setVisibility:
-      console.log(state.visibility);
       return {
         ...state,
         visibility: !state.visibility,

@@ -1,6 +1,5 @@
 import React from 'react';
-import { ChartDataItems } from '../../../../../../models/Charts/ChartsModel';
-
+import { ChartDataItems } from '../../../../../../../../models/Charts/ChartsModel';
 
 interface ChartGraphItemProps {
   items?: ChartDataItems[]

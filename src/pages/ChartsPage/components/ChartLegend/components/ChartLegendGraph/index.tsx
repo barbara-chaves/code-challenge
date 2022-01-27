@@ -6,11 +6,11 @@ import {
   BasicPoints,
   ChoroplethLine,
   GradientLine,
-} from "./components/ChartGraphItem";
+} from "./components/ChartGraphItems";
 
 
-import { LegendActionsTypes } from "../../../../stores/legendStore/reducer";
-import { LegendContext } from "../../../../stores/legendStore/context";
+import { LegendActionsTypes } from "../../../../../../stores/legendStore/reducer";
+import { LegendContext } from "../../../../../../stores/legendStore/context";
 
 const ChartLegendGraph = () => {
   const { state, dispatch } = useContext(LegendContext)
