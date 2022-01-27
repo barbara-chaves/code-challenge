@@ -5,7 +5,6 @@ import 'rc-slider/assets/index.css';
 import "./index.scss"
 import { ChartDataTimeline } from '../../../../../../../../models/Charts/ChartsModel';
 
-
 const handleStyle = { backgroundColor: "#CAB2D6", border: "none", width: 12, height: 12 }
 const railStyle = { backgroundColor: "#CCCCCC", borderRadius: 0, height: 3 }
 const trackSTyle = { backgroundColor: "#CAB2D6", height: 3 }

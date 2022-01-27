@@ -1,25 +1,24 @@
-import React, { useContext } from 'react';
-import "./index.scss"
-import parse from 'html-react-parser';
-import Modal from 'react-modal'
+import React, { useContext } from "react";
+import "./index.scss";
+import Modal from "react-modal";
 
-import CloseButton from '../../../../../../components/CloseButton';
-import { LegendActionsTypes } from '../../../../../../stores/legendStore/reducer';
-import { LegendContext } from '../../../../../../stores/legendStore/context';
+import CloseButton from "../../../../../../components/CloseButton";
+import { LegendActionsTypes } from "../../../../../../stores/legendStore/reducer";
+import { LegendContext } from "../../../../../../stores/legendStore/context";
+import HtmlText from "../../../../../../components/HtmlText";
 
-Modal.setAppElement("#root")
+Modal.setAppElement("#root");
 
 const ChartLegendInfo = () => {
-  const { state, dispatch } = useContext(LegendContext)
+  const { state, dispatch } = useContext(LegendContext);
   const { chartData, showInfo } = state;
 
   const onChangeInfo = () => {
-    dispatch({ type: LegendActionsTypes.setShowInfo })
-  }
-  
-  if (!chartData?.description) return null
+    dispatch({ type: LegendActionsTypes.setShowInfo });
+  };
 
-  const DescriptionReactElement = parse(chartData?.description)
+  if (!chartData?.description) return null;
+
   return (
     <Modal
       isOpen={showInfo}
@@ -29,21 +28,21 @@ const ChartLegendInfo = () => {
           width: "520px",
           margin: "auto",
           border: "none",
-          boxShadow: "1px 1px 10px 1px #BBB"
-        }
+          boxShadow: "1px 1px 10px 1px #BBB",
+        },
       }}
     >
-      <div className='chart-legend-info'>
-        <div className='chart-legend-info_header'>
+      <div className="chart-legend-info">
+        <div className="chart-legend-info_header">
           <h2>{chartData?.name}</h2>
           <CloseButton handleClick={onChangeInfo} />
         </div>
-        <div className='chart-legend-info_text'>
-          {DescriptionReactElement}
-        </div>
+        {chartData?.description ? (
+          <HtmlText htmlText={chartData.description} />
+        ) : null}
       </div>
     </Modal>
-  )
+  );
 };
 
 export default ChartLegendInfo;

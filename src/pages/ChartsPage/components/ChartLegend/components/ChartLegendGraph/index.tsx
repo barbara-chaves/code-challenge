@@ -8,37 +8,22 @@ import {
   GradientLine,
 } from "./components/ChartGraphItems";
 
-
 import { LegendActionsTypes } from "../../../../../../stores/legendStore/reducer";
 import { LegendContext } from "../../../../../../stores/legendStore/context";
+import PageText from "../../../../../../components/PageText";
+
+const hasLabelList: (string | undefined)[] = ["choropleth", "gradient"];
+
+const hasTextList : (string | undefined)[] = ["gradient", "choropleth"];
 
 const ChartLegendGraph = () => {
-  const { state, dispatch } = useContext(LegendContext)
+  const { state, dispatch } = useContext(LegendContext);
   const { chartData, dates, collapse } = state;
 
-  if (collapse) return null
+  if (collapse) return null;
 
   const handleChangeDates = (dates: number[]) => {
-    dispatch({ type: LegendActionsTypes.setDates, payload: dates })
-  }
-
-  const ElementType = () => {
-    switch (chartData?.type) {
-      case "choropleth":
-        return <ChoroplethLine items={chartData?.items} />;
-      case "gradient":
-        return <GradientLine items={chartData?.items} />;
-      case "basic":
-        return <BasicPoints items={chartData?.items} />;
-      case "timeline":
-        return <TimeLine
-          dates={dates}
-          handleChangeDates={handleChangeDates}
-          timeline={chartData?.timeline}
-        />;
-      default:
-        return null;
-    }
+    dispatch({ type: LegendActionsTypes.setDates, payload: dates });
   };
 
   const Label = () => {
@@ -53,10 +38,37 @@ const ChartLegendGraph = () => {
     );
   };
 
+  const ElementType = () => {
+    switch (chartData?.type) {
+      case "choropleth":
+        return <ChoroplethLine items={chartData?.items} />;
+      case "gradient":
+        return <GradientLine items={chartData?.items} />;
+      case "basic":
+        return <BasicPoints items={chartData?.items} />;
+      case "timeline":
+        return (
+          <TimeLine
+            dates={dates}
+            handleChangeDates={handleChangeDates}
+            timeline={chartData?.timeline}
+          />
+        );
+      default:
+        return null;
+    }
+  };
+
+  const hasLabel = hasLabelList.includes(chartData?.type);
+  const hasText = hasTextList.includes(chartData?.type);
+
   return (
     <div className="legend-graph">
       <ElementType />
-      {chartData?.type !== "basic" ? <Label /> : null}
+      {hasLabel ? <Label /> : null}
+      {hasText ? (
+        <PageText textId={`charts.legends.${chartData?.type}`} />
+      ) : null}
     </div>
   );
 };

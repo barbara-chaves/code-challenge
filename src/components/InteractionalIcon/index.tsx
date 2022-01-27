@@ -1,15 +1,14 @@
-import React from 'react';
-import "./index.scss"
+import React from "react";
+import "./index.scss";
 
-import { ReactComponent as Hide } from 
-'../../assets/icons/hide.svg'
-import { ReactComponent as Show } from '../../assets/icons/show.svg'
-import { ReactComponent as Info } from '../../assets/icons/info.svg'
-import { ReactComponent as Drag } from '../../assets/icons/drag-dots.svg'
-import { ReactComponent as Down } from '../../assets/icons/arrow-down.svg'
-import Tooltip from '../Tooltip';
+import { ReactComponent as Hide } from "../../assets/icons/hide.svg";
+import { ReactComponent as Show } from "../../assets/icons/show.svg";
+import { ReactComponent as Info } from "../../assets/icons/info.svg";
+import { ReactComponent as Drag } from "../../assets/icons/drag-dots.svg";
+import { ReactComponent as Down } from "../../assets/icons/arrow-down.svg";
+import Tooltip from "../Tooltip";
 
-type InteractionalIconType = "drag" | "show" | "hide" | "info" | "down" | "up"
+type InteractionalIconType = "drag" | "show" | "hide" | "info" | "down" | "up";
 
 interface InteractionalIconProps {
   type: InteractionalIconType;
@@ -18,8 +17,8 @@ interface InteractionalIconProps {
 }
 
 const Up = () => {
-  return <Down className='up' />
-}
+  return <Down className="up" />;
+};
 
 const iconType = {
   drag: { icon: <Drag />, text: "Sort layer" },
@@ -28,19 +27,19 @@ const iconType = {
   info: { icon: <Info />, text: "Layer Info" },
   down: { icon: <Down />, text: "Collapse" },
   up: { icon: <Up />, text: "Expand" },
-}
+};
 
-const InteractionalIcon = ({ type, handleClick, dragProps }: InteractionalIconProps) => {
-  const draggableProps = type === "drag" ? dragProps : undefined
+const InteractionalIcon = ({
+  type,
+  handleClick,
+  dragProps,
+}: InteractionalIconProps) => {
+  const draggableProps = type === "drag" ? dragProps : undefined;
   return (
-    <Tooltip
-      overlay={iconType[type]?.text}
-    >
-      <div className='interactional-button' {...draggableProps} >
-        <button className='interactional-button_btn' onClick={handleClick} >
-          <span role="img" className='interactional-button_icon'>
-            {iconType[type]?.icon}
-          </span>
+    <Tooltip overlay={iconType[type]?.text}>
+      <div className="interactional-button" {...draggableProps}>
+        <button className="interactional-button_btn" onClick={handleClick}>
+          {iconType[type]?.icon}
         </button>
       </div>
     </Tooltip>
