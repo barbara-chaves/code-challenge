@@ -1,11 +1,10 @@
 .timeline {
   margin: 10px 20px;
-}
-
-.timeline_label {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
+  &_label {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {

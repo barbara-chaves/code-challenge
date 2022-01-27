@@ -1,5 +1,5 @@
 import React from 'react';
-import "./index.css"
+import "./index.scss"
 
 import ChartLegendHeader from './components/ChartLegendHeader';
 import ChartLegendGraph from './components/ChartLegendGraph';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import dayjs from "dayjs"
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import "./index.css"
+import "./index.scss"
 import { ChartDataTimeline } from '../../../../../../../../models/Charts/ChartsModel';
 
 

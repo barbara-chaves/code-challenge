@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./index.css"
+import "./index.scss"
 
 import logo from '../../assets/images/logo-white.svg'
 

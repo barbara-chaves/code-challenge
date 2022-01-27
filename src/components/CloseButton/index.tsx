@@ -1,5 +1,5 @@
 import React from 'react';
-import "./index.css"
+import "./index.scss"
 import { ReactComponent as CloseIcon } from '../../assets/icons/cross.svg'
 
 interface CloseButtonProps {

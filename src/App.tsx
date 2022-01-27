@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './app.scss';
 import { Route, Routes} from 'react-router-dom';
 import ChartsPage from './pages/ChartsPage';
 import Header from './components/Header';

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./index.css";
+import "./index.scss";
 
 
 import { LegendActionsTypes } from "../../../../../../stores/legendStore/reducer";

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import "./index.css"
+import "./index.scss"
 import parse from 'html-react-parser';
 import Modal from 'react-modal'
 

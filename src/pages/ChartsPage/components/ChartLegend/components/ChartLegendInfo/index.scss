@@ -1,0 +1,13 @@
+.chart-legend-info {
+  padding: 0 20px;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--title-font-family);
+    color: var(--title-color);
+  }
+  &_text {
+    text-align: justify;
+  }
+}

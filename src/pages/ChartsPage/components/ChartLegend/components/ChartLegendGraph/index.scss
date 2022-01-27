@@ -1,0 +1,32 @@
+.legend-graph_line,
+.legend-graph_label {
+  width: 100%;
+  height: 100%;
+  height: 7px;
+  display: flex;
+  &_item {
+    height: 100%;
+    width: 100%;
+    span {
+      font-size: 12px;
+    }
+    &_circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    &.--basic {
+      display: flex;
+      text-align: start;
+      align-items: center;
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+  }
+  &.--basic {
+    flex-direction: column;
+    height: auto;
+    padding: 0px 20px;
+  }
+}
