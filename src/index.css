@@ -3,6 +3,7 @@
   --title-font-family: "Lato", sans-serif;
 
   --title-color: #4a5258;
+  --icon-color: #393F44;
   --text-color: #6B6B6B;
   --link-color: #1E9CFF;
 }
@@ -12,5 +13,5 @@ body {
   font-family: var(--text-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: val(--text-color);
+  color: var(--text-color);
 }

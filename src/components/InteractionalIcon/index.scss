@@ -1,0 +1,35 @@
+.tooltip:last-of-type button.interactional-button_btn {
+  padding: 0;
+}
+
+.interactional-button {
+  &_btn {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    padding: 0 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 16px;
+      width: 22px;
+      color: var(--icon-color);
+      &.up {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &_tooltip {
+    display: none;
+    position: absolute;
+    transform: translateY(-50px);
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+  }
+}
+
+.interactional-button:hover .interactional-button_tooltip {
+  display: block;
+}

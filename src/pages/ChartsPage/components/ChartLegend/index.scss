@@ -1,0 +1,10 @@
+.chart-legend {
+  margin: auto;
+  max-width: 520px;
+  padding: 15px;
+  border-bottom: 0.5px solid rgb(226, 226, 226);
+  border-radius: 1px;
+}
+li:last-child .chart-legend  {
+  border: none;
+}
