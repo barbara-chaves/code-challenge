@@ -1,20 +1,16 @@
 import React from 'react';
-import './App.css';
-import { Link, Route, Routes} from 'react-router-dom';
-import Charts from './components/containers/Charts';
+import './app.scss';
+import { Route, Routes} from 'react-router-dom';
+import ChartsPage from './pages/ChartsPage';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <ul>
-          <li>
-            <Link to="/charts">Charts</Link>
-          </li>
-        </ul>
-      </header>
+     <Header />
       <Routes>
-        <Route path="/charts" element={<Charts />} />
+        <Route path="/"  /> 
+        <Route path="/charts" element={<ChartsPage />} />
       </Routes>
     </div>
   );
