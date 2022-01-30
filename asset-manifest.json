@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/code-challenge/static/css/main.627de4de.css",
-    "main.js": "/code-challenge/static/js/main.7fbb6b12.js",
+    "main.css": "/code-challenge/static/css/main.5b2d87f2.css",
+    "main.js": "/code-challenge/static/js/main.9766c619.js",
     "static/js/787.f820855a.chunk.js": "/code-challenge/static/js/787.f820855a.chunk.js",
     "static/media/logo-white.svg": "/code-challenge/static/media/logo-white.40cf9b6a36607deba4cbde6c3941f5c3.svg",
     "index.html": "/code-challenge/index.html",
@@ -11,12 +11,12 @@
     "static/media/info.svg": "/code-challenge/static/media/info.c491fdbc226bd8819bd0aa6fa0b39b5d.svg",
     "static/media/cross.svg": "/code-challenge/static/media/cross.153db87367c5c52620778bdad2e16663.svg",
     "static/media/arrow-down.svg": "/code-challenge/static/media/arrow-down.f3c952d68ad2e0d4b09e9eaff0676c41.svg",
-    "main.627de4de.css.map": "/code-challenge/static/css/main.627de4de.css.map",
-    "main.7fbb6b12.js.map": "/code-challenge/static/js/main.7fbb6b12.js.map",
+    "main.5b2d87f2.css.map": "/code-challenge/static/css/main.5b2d87f2.css.map",
+    "main.9766c619.js.map": "/code-challenge/static/js/main.9766c619.js.map",
     "787.f820855a.chunk.js.map": "/code-challenge/static/js/787.f820855a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.627de4de.css",
-    "static/js/main.7fbb6b12.js"
+    "static/css/main.5b2d87f2.css",
+    "static/js/main.9766c619.js"
   ]
 }
