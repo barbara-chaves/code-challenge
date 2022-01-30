@@ -14,7 +14,7 @@ import PageText from "../../../../../../components/PageText";
 
 const hasLabelList: (string | undefined)[] = ["choropleth", "gradient"];
 
-const hasTextList : (string | undefined)[] = ["gradient", "choropleth"];
+const hasTextList : (string | undefined)[] = ["gradient"];
 
 const ChartLegendGraph = () => {
   const { state, dispatch } = useContext(LegendContext);

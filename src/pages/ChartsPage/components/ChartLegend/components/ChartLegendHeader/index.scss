@@ -1,3 +1,5 @@
+@import"../../../../../../style/variables";
+
 .chart_legend_header {
   width: 100%;
   display: flex;
@@ -9,9 +11,8 @@
     justify-content: start;
     &_title {
       font-size: 14px;
-      font-family: var(--title-font-family);
-      margin:0;
+      font-family: $title-font-family;
+      margin: 0;
     }
-    
   }
 }
