@@ -1,5 +1,11 @@
 # Front End Code Challenge
 
+## Project features:
+
+### Chart Legend feature
+Display the legends of the four kinds of charts. They can be display aditional details by clicking the info button, hide 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
