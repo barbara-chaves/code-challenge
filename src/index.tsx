@@ -9,7 +9,7 @@ import { PageTextContextProvider } from "./stores/pageTextStore/context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="code-challenge/">
       <PageTextContextProvider>
         <App />
       </PageTextContextProvider>
