@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# Front End Code Challenge
+
+## Project features and structure:
+
+### Chart Legend feature
+
+Displays the legends of the four kinds of charts.
+
+They can display additional details by clicking the 'info button', hide their values by clicking the 'collapse button', and be sorted by dragging the 'sort layer button'.
+
+### Project architecture
+
+The basic structure is from create-react-app. The App component contains the routes to access the pages. The 'pages' folder contains the page's structural components, and the 'components' folder contains the reusable functional components. 
+
+The state management is made using React Context + React useReducer. The context and reducer altogether create the app stores, on 'stores' folder.
+
+The api management is made by the services, on the 'services' folder. 
+
+The 'style' folder contains the styles utilities. In this case, the sass variables.
+
+---
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,11 +1,13 @@
+@import"../../../../../../style/variables";
+
 .chart-legend-info {
   padding: 0 20px;
   &_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--title-font-family);
-    color: var(--title-color);
+    font-family: $title-font-family;
+    color: $title-color;
   }
   &_text {
     text-align: justify;
